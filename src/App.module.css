@@ -1,6 +1,9 @@
 .wraper {
   background-color: #000000;
   background-image: url('./assets/images/bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -8,13 +11,13 @@
 }
 
 .logo {
+  margin-bottom: 50px;
   display: block;
 }
 
 .logo img {
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
 }
 
 .timer {
@@ -51,4 +54,38 @@
   font-size: 24.01px;
   font-weight: 400;
   line-height: 32.7px;
+}
+
+@media (max-width: 630px) {
+  .logo {
+    margin-bottom: 25px;
+  }
+
+  .timer {
+    padding: 30px 35px;
+  }
+
+  .title {
+    font-size: 55px;
+    line-height: 55.86px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 30.7px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .text {
+    font-size: 17px;
+  }
 }
