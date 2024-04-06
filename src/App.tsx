@@ -35,6 +35,7 @@ const App: FC = () => {
             <p className={style.text}>Seconds</p>
           </div>
         </div>
+        <p className={style.end}>12th April, 6pm UTC</p>
       </div>
     </div>
   )
